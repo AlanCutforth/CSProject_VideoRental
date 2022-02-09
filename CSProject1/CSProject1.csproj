@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C3DA0B67-AE71-42BD-AE78-8AED03832BDB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CSProject1</RootNamespace>
+    <AssemblyName>CSProject1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComponentTest.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ComponentTest.Designer.cs">
+      <DependentUpon>ComponentTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddCustomer.Designer.cs">
+      <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddItemToLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddItemToLoan.Designer.cs">
+      <DependentUpon>FormAddItemToLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddLoan.Designer.cs">
+      <DependentUpon>FormAddLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddNewStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddNewStock.Designer.cs">
+      <DependentUpon>FormAddNewStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddOldStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddOldStock.Designer.cs">
+      <DependentUpon>FormAddOldStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddUser.Designer.cs">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditCustomer.Designer.cs">
+      <DependentUpon>FormEditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditItem.Designer.cs">
+      <DependentUpon>FormEditItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGetNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGetNumber.Designer.cs">
+      <DependentUpon>FormGetNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoanDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoanDetails.Designer.cs">
+      <DependentUpon>FormLoanDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManageUsers.Designer.cs">
+      <DependentUpon>FormManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarkBroken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarkBroken.Designer.cs">
+      <DependentUpon>FormMarkBroken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewOrOldStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewOrOldStock.Designer.cs">
+      <DependentUpon>FormNewOrOldStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPasswordField.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPasswordField.Designer.cs">
+      <DependentUpon>FormPasswordField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRepairs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRepairs.Designer.cs">
+      <DependentUpon>FormRepairs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HireDatabaseTools.cs" />
+    <Compile Include="LoanItem.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepairQueue.cs" />
+    <Compile Include="Session.cs" />
+    <EmbeddedResource Include="FormAddCustomer.resx">
+      <DependentUpon>FormAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddItemToLoan.resx">
+      <DependentUpon>FormAddItemToLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddLoan.resx">
+      <DependentUpon>FormAddLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddNewStock.resx">
+      <DependentUpon>FormAddNewStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddOldStock.resx">
+      <DependentUpon>FormAddOldStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddUser.resx">
+      <DependentUpon>FormAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditCustomer.resx">
+      <DependentUpon>FormEditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditItem.resx">
+      <DependentUpon>FormEditItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGetNumber.resx">
+      <DependentUpon>FormGetNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoanDetails.resx">
+      <DependentUpon>FormLoanDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManageUsers.resx">
+      <DependentUpon>FormManageUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarkBroken.resx">
+      <DependentUpon>FormMarkBroken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNewOrOldStock.resx">
+      <DependentUpon>FormNewOrOldStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPasswordField.resx">
+      <DependentUpon>FormPasswordField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRepairs.resx">
+      <DependentUpon>FormRepairs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
